@@ -1,0 +1,30 @@
+zuul:
+  routes:
+    order-service:
+      path: /orders/**
+      strip-prefix: false
+      service-id: order-service
+    product-service:
+      path: /product/**
+      strip-prefix: false
+      service-id: product-service
+     
+      
+hystrix:
+  command:
+    default:
+    execution:
+      isolation:
+        thread:     
+          timeoutInMillisecond:5000
+          
+ 
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
+  eager-load:
+    enabled: true
+    
+  
+ 
+        
