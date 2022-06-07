@@ -1,13 +1,9 @@
 zuul:
   routes:
-    order-service:
-      path: /orders/**
+    tenant-service:
+      path: /tenant/**
       strip-prefix: false
-      service-id: order-service
-    product-service:
-      path: /product/**
-      strip-prefix: false
-      service-id: product-service
+      service-id: tenant-service
      
       
 hystrix:
