@@ -20,7 +20,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -al'
                 echo 'This is a minimal pipeline.'
-                sh 'mvn clean package'
+                sh 'mvn clean package -DskipTest'
             }
         }
         
