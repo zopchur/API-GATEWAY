@@ -21,6 +21,13 @@ ribbon:
   eager-load:
     enabled: true
     
+eureka:
+  instance:
+    hostname: eureka-0
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka/
+    
   
  
         
