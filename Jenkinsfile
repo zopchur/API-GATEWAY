@@ -27,7 +27,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("nare629/tenant-service:${env.BUILD_ID}")
+                    myapp = docker.build("nare629/api-gateway:${env.BUILD_ID}")
                 }
             }
         }
